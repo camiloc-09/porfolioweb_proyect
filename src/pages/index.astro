@@ -1,11 +1,44 @@
 ---
-import Welcome from '../components/Welcome.astro';
+
+import Badge from '../components/Badge.astro';
 import Layout from '../layouts/Layout.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Welcone to Astro!">
+	<main>
+			
+
+		<section class="w-full mx-auto lg:w-[740px] py-44">
+
+			<img 
+			class="w-[70px] h-[70px] rounded-full object-cover mb-4"
+			src="/images/foto_perfil.jpg" 
+			alt="Foto de Camilo" >
+			
+			<h1 class="text-white text-5xl font-bold flex  flex-row items-center gap-x-4 pb-4">
+				Hola, soy Camilo <a 
+				href="https://www.linkedin.com/in/camilo-andres-andres-cujia-5b44251b1/"
+				target="_blank" 
+				rel="noopener" 
+				class="flex justify-center items-center">
+
+				<Badge>Disponible para prácticas universitarias</Badge>
+				</div>
+			</h1>
+			<h2 class="text-2xl ocean-80 text-wrap">
+				Estudiante de Ingeniería de Sistemas de La Guajira🌵,<span class="text-yellow-400 opacity-90">Colombia</span>. Apasionado por el <span class="text-emerald-500/95 opacity-90">ánalisis de datos</span>, el <span class="text-red-500 opacity-90">desarrollo</span> y <span class="text-indigo-400 opacity-90">diseño web</span> de experiencias.
+			</h2>
+
+		</section>
+		
+	</main>
 </Layout>
+<style>
+
+	html {
+	
+	}
+</style>
