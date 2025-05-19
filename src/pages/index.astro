@@ -1,7 +1,10 @@
 ---
 
 import Badge from '../components/Badge.astro';
+import LinkedIn from '../icons/LinkedIn.astro';
 import Layout from '../layouts/Layout.astro';
+import SocialPill from '../components/SocialPill.astro';
+import GitHub from '../icons/GitHub.astro';
 
 // Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
 // Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
@@ -11,7 +14,7 @@ import Layout from '../layouts/Layout.astro';
 	<main>
 			
 
-		<section class="w-full mx-auto lg:w-[740px] py-44">
+		<section class="w-full mx-auto lg:w-[740px] py-24">
 
 			<img 
 			class="w-[70px] h-[70px] rounded-full object-cover mb-4"
@@ -31,6 +34,18 @@ import Layout from '../layouts/Layout.astro';
 			<h2 class="text-2xl ocean-80 text-wrap">
 				Estudiante de Ingeniería de Sistemas de La Guajira🌵,<span class="text-yellow-400 opacity-90">Colombia</span>. Apasionado por el <span class="text-emerald-500/95 opacity-90">ánalisis de datos</span>, el <span class="text-red-500 opacity-90">desarrollo</span> y <span class="text-indigo-400 opacity-90">diseño web</span> de experiencias.
 			</h2>
+
+			<nav class="flex gap-x-2 mt-4" >
+					<SocialPill href="https://www.linkedin.com/in/camilo-andres-andres-cujia-5b44251b1/">
+						<LinkedIn class="w-6 h-6" />
+						LinkedIn
+					</SocialPill>
+					<SocialPill href="https://github.com/camiloc-09">
+						<GitHub class="w-6 h-6" />
+						GitHub
+					</SocialPill>
+			</nav>
+
 
 		</section>
 		
